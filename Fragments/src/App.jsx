@@ -1,10 +1,10 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import FoodItems from "./assets/components/FoodItems";
-import ErrorMsg from "./assets/components/ErrorMsg";
+import FoodItems from "./components/FoodItems";
+import ErrorMsg from "./components/ErrorMsg";
 
 function App() {
- //let foodItem = ["Daal", "Green Vegetables", "Fruits", "Milk", "Roti", "Fish","Ghee"];
+ let foodItem = ["Daal", "Green Vegetables", "Fruits", "Milk", "Roti", "Fish","Ghee"];
   //let foodItem = [];
 
 
@@ -13,8 +13,8 @@ function App() {
       <h1>
         <u>[Healthy Food List]</u>
       </h1>
-      <ErrorMsg/>
-      <FoodItems/>
+      <ErrorMsg items={foodItem}></ErrorMsg>
+      <FoodItems items={foodItem}> </FoodItems>
     </center>
   );
 }
